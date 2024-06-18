@@ -65,6 +65,8 @@ html {
 .main {
   height: 100%;
 }
+
+
 body {
   background: -webkit-gradient(linear, right top, left bottom, from(#e1741c), color-stop(#da1505), color-stop(#da0c47), to(#da00c2)) no-repeat;
   background: linear-gradient(to bottom left, #e1741c, #da1505, #da0c47, #da00c2) no-repeat;
@@ -108,12 +110,62 @@ body {
   background: url(../img/logo.png) center no-repeat;
   background-size: 100%;
 }
+/*Стили для странички с регистрацией*/
+.top{
+  padding-top: 10rem;
+  z-index:20
+}
+.avatar{
+  width: 7rem;
+  height: 7rem;
+  background: url(..img\user.png) center no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  margin-bottom: 6rem;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.text{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 2rem;
+}
+  
+.input_field{
+  color: #fff;
+  border-radius: 45px;
+  background-color: #fff;
+  width: 70%;
+  height: 4.6rem;
+
+  margin-top: 0.5rem;
+  border: 0.2rem solid #fff;
+}
+.remember_me{
+  color: #fff;
+
+  
+}
+.link_on_sing_in{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/**/
+
 .start {
   width: 100%;
   height: 5.6rem;
   letter-spacing: 1px;
   margin-top: 56rem;
 }
+
 #Page2 {
   background: #fff;
   display: none;
@@ -572,6 +624,9 @@ body {
   height: 5.6rem;
   width: 24rem;
   margin-top: 10rem;
+}
+#Page1 {
+  display:none;
 }
 #Page2 {
   display: none;

@@ -9,6 +9,29 @@
     <title>Woosh</title>
 </head>
 <body id="body">
+    <!--Добавил страничку с регистрацией-->
+    <div class="page" id="registration">
+        <div class="top">
+            <div class="avatar"></div>
+            <div class="log">
+                <div class="text">Логин</div>
+                <input type="text" class="input_field"></input>
+            </div>
+            <div class="log">
+                <div class="text">Пароль</div>
+                <input type="password" class="input_field"></input>
+            </div>
+            <input type="checkbox" class="remember_me">Запомнить меня</input>
+        </div>
+            <div class="page2-main">
+                <form>
+                    <button class="start button" onclick="return registration('Page1');">Регистрация</button>
+                </form>
+                <div class="text">Уже зарегистрированны? <a class="link_on_sing_in" href="#" class="sing_in"><b>Войти</b></a></div>
+            </div>
+        </div>
+    </div>
+
     <div class="page" id="Page1">
         <div class="main">
             <div class="container">
@@ -38,15 +61,15 @@
                 <form>
                     <div class="wo-or-man">
                         <label>
-                            <input type="radio" name="gender" value="woman" class="real-radio">
-                            <div class="fake-radio woman" id ="woman"onclick="return morw('woman', 'man');">
+                            <input type="radio" name="gender" value="woman" class="real-radio" id="woman_btn">
+                            <div class="fake-radio woman" id ="woman" onclick="return morw('woman', 'man');">
                                 <div class="wrap">
                                     <p class="wrap-block">Женщине</p>
                                 </div>
                             </div>
                         </label>
                         <label>
-                            <input type="radio" name="gender" value="man" class="real-radio">
+                            <input type="radio" name="gender" value="man" class="real-radio" id="man_btn">
                             <div class="fake-radio man" id="man" onclick="return morw('man', 'woman');">
                                 <div class="wrap">
                                     <p class="wrap-block">Мужчине</p>
@@ -65,7 +88,7 @@
                             <div class="point"></div>
                         </a>
                     </div>
-                    <button class="farther button" onclick="return page2('Page3');">Далее</button>
+                    <button class="farther button" onclick="return page2('Page3');" id = "btnToPage3">Далее</button>
                 </form>
                 
             </div>
@@ -81,7 +104,7 @@
             <div class="page2-main">
                     <p class="years">Возраст получателя</p>
                 <form>
-                    <input type="number" class="age" min="0" max="120">
+                    <input type="number" class="age" min="0" max="120" id="age">
                 
                     <div class="points">
                         <a onclick="return point('Page2', 'Page3', 'Page4');">
@@ -110,7 +133,7 @@
                 <p class="quest-budget">Ваш бюджет</p>
                 <form>
                     <div class="range">
-                        <input type="range" id="budget" class="budget" min="0" max="15000" value="2000" step="1000">
+                        <input type="range" id="budget" class="budget" min="0" max="15000" value="2000" step="200">
                         <div class="price">
                             <div class="price-null">
                                 <p>0₽</p>
@@ -255,8 +278,12 @@
                 </form>
             </div>
             <button class="wooshbtn button" onclick="return woosh('Page7');">Вжухнуть подарок</button>
+            <a href="test.html">Гпт</a>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js\script.js"></script>
+    <script src="js\gpt.js"></script>
+    <script src="js\users.js"></script>
+    <script src="js\yandex.js"></script>
 </body>
 </html>
