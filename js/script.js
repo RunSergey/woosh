@@ -24,9 +24,20 @@ function page3(id) {
     document.getElementById('Page4').style.display='none';
     return false;
   }
+  function choice(id) {
+    document.getElementById(id).style.display='block';
+    document.getElementById('choice').style.display='none';
+    return false;
+  }
   function page5(id) {
     document.getElementById(id).style.display='block';
     document.getElementById('Page5').style.display='none';
+    return false;
+  }
+  function woosh(id) {
+    document.getElementById(id).style.display='block';
+    document.getElementById('Page6').style.display='none';
+    document.getElementById('choice').style.display='none';
     return false;
   }
 function morw(c, nc) {

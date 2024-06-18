@@ -80,8 +80,7 @@ body {
 .container {
   text-align: center;
   display: inline-block;
-  width: 240px;
-  padding: 0rem 4rem;
+  width: 300px;
 }
 .subtitle {
   z-index: 10;
@@ -136,7 +135,11 @@ body {
 }
   
 .input_field{
-  color: #fff;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 20;
+  color: #000;
   border-radius: 45px;
   background-color: #fff;
   width: 70%;
@@ -146,8 +149,17 @@ body {
   border: 0.2rem solid #fff;
 }
 .remember_me{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+  z-index: 20;
   color: #fff;
 
+.remember_me input, p{
+  display: inline-block;
+}
   
 }
 .link_on_sing_in{
@@ -419,6 +431,62 @@ body {
   color: #ACACC1;
   width: 40%;
 }
+#choice{
+  min-width: 320px;
+  height: 100%;
+  background-color: #fff;
+}
+#choice .settings{
+  font-family: 'Montserrat_bold', sans-serif;
+  font-size: 1.7rem;
+  border: none;
+  color: #DA1F07;
+  background: #fff;
+  border: 3px solid #DA1F07;
+  height: 5.6rem;
+  width: 24rem;
+}
+#choice .page2-main{
+  position: absolute;
+  bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#choice .wooshbtn{
+  font-family: 'Montserrat_bold', sans-serif;
+  font-size: 1.7rem;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, right top, from(#da0c47), to(#de5314));
+  background: linear-gradient(to top right, #da0c47, #de5314);
+  height: 5.6rem;
+  width: 24rem;
+}
+#choice .top {
+  margin-bottom: -1px;
+  height: 55%;
+  width: 100%;
+  padding-top: 1rem;
+  background: -webkit-gradient(linear, right top, left bottom, from(#db03a9), to(#db1219));
+  background: linear-gradient(to bottom left, #7E03C6, #db03a9);
+}
+#choice .top .bg {
+  height: 100%;
+  width: 100%;
+  background: url(../img/SVG/p-choise-bg.svg) bottom no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 #Page5 {
   height: 100%;
   width: 100%;
@@ -625,6 +693,29 @@ body {
   width: 24rem;
   margin-top: 10rem;
 }
+#Gifts{
+  background: #000;
+  height: 100%;
+}
+#Gifts .container{
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+  height: 100%;
+}
+#Gifts p{
+  font-family: 'Montserrat_bold', sans-serif;
+  text-align: left;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+#Gifts .gifts{
+  border-radius: 10px;
+  border: 2px solid #fff;
+  height: 70%;
+}
+
 #Page1 {
   display:none;
 }
@@ -641,5 +732,14 @@ body {
   display: none;
 }
 #Page6 {
+  display: none;
+}
+#registration{
+  /*display: none;*/
+}
+#choice{
+  display: none;
+}
+#Gifts{
   display: none;
 }

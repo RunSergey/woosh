@@ -13,15 +13,22 @@
     <div class="page" id="registration">
         <div class="top">
             <div class="avatar"></div>
-            <div class="log">
-                <div class="text">Логин</div>
-                <input type="text" class="input_field"></input>
-            </div>
-            <div class="log">
-                <div class="text">Пароль</div>
-                <input type="password" class="input_field"></input>
-            </div>
-            <input type="checkbox" class="remember_me">Запомнить меня</input>
+            <form>
+                <div class="log">
+                    <div class="text">Логин</div>
+                    <input type="text" class="input_field" title="Login"></input>
+                </div>
+                <div class="log">
+                    <div class="text">Пароль</div>
+                    <input type="password" class="input_field" title="password"></input>
+                </div>
+            </form>
+            
+           
+            <label class="remember_me">
+                <input type="checkbox"></input>
+                <P>Запомнить меня</P>
+            </label>
         </div>
             <div class="page2-main">
                 <form>
@@ -164,8 +171,20 @@
                             <div class="point active"></div>
                         </a>
                     </div>
-                    <button class="farther button" onclick="return page4('Page5');">Далее</button>
+                    <button class="farther button" onclick="return page4('choice');">Далее</button>
                 </form>
+        </div>
+    </div>
+
+    <div class="page" id="choice">
+        <div class="top">
+            <div class="bg">       
+            </div>
+        </div>
+        <div class="page2-main">
+            <button class="settings button" onclick="return choice('Page5');">Настроить параметры</button>
+            <p>ИЛИ</p>
+            <button class="wooshbtn button" onclick="return woosh('Gifts');">Вжухнуть подарок</button>
         </div>
     </div>
 
@@ -277,8 +296,17 @@
                     <textarea class="input-text" name="pole_addition" placeholder="Что-нибудь ещё?"></textarea>
                 </form>
             </div>
-            <button class="wooshbtn button" onclick="return woosh('Page7');">Вжухнуть подарок</button>
+            <button class="wooshbtn button" onclick="return woosh('Gifts');">Вжухнуть подарок</button>
             <a href="test.html">Гпт</a>
+        </div>
+    </div>
+
+    <div class="page" id="Gifts">
+        <div class="container">
+            <p>Ваши<br>подарки</p>
+            <div class="gifts">
+                <p></p>
+            </div>
         </div>
     </div>
     <script src="js\script.js"></script>
