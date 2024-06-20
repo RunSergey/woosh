@@ -1,5 +1,5 @@
-let login = document.getElementById('')
-let passwd = document.getElementById('')
+let login = document.getElementById('login')
+let passwd = document.getElementById('passwd')
 let btn = document.getElementById('')
 let users = {}
 
