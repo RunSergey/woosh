@@ -295,21 +295,20 @@
                     <textarea class="input-text" name="pole_addition" placeholder="Что-нибудь ещё?"></textarea>
                 </form>
             </div>
-            <button class="wooshbtn button" onclick="return woosh('Gifts');">Вжухнуть подарок</button>
+            <button class="wooshbtn button" onclick="return woosh('Gifts',Presents, budgetValue, maleValue, ageValue);">Вжухнуть подарок</button>
         </div>
     </div>
 
     <div class="page" id="Gifts">
         <div class="container">
             <p>Ваши<br>подарки</p>
-            <p id="gift"></p>
             <div class="gifts">
-                <p></p>
+                <p id="gift_name"></p>
+                <p id="gift_description"></p>
             </div>
         </div>
     </div>
     <script src="js\script.js"></script>
     <script src="js\users.js"></script>
-    <script src="js\presents.js"></script>
 </body>
 </html>

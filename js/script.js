@@ -1602,9 +1602,9 @@ money: '3000'
 }
 ]
 
-let ageValue
-let maleValue
-let budgetValue
+let ageValue = '18'
+let maleValue = 'man'
+let budgetValue = '3000'
 
 
 function registration(id){
@@ -1657,7 +1657,9 @@ function page3(id) {
     let filteredPresents = getPresent(Presents, budgetValue, maleValue, ageValue);
     console.log(filteredPresents);
     console.log(ageValue, budgetValue, maleValue);
-  
+    document.getElementById('gift_name').textContent ='Название: ' + filteredPresents.name
+    document.getElementById('gift_description').textContent = 'Описание: ' + filteredPresents.description
+
     document.getElementById(id).style.display = 'block';
     document.getElementById('Page6').style.display = 'none';
     document.getElementById('choice').style.display = 'none';
