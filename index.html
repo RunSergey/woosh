@@ -16,11 +16,11 @@
             <form>
                 <div class="log">
                     <div class="text">Логин</div>
-                    <input type="text" class="input_field" title="Login"></input>
+                    <input type="text" class="input_field" title="Login" id="login"></input>
                 </div>
                 <div class="log">
                     <div class="text">Пароль</div>
-                    <input type="password" class="input_field" title="password"></input>
+                    <input type="password" class="input_field" title="password" id="passwd"></input>
                 </div>
             </form>
             
@@ -34,7 +34,7 @@
                 <form>
                     <button class="start button" onclick="return registration('Page1');">Регистрация</button>
                 </form>
-                <div class="text">Уже зарегистрированны? <a class="link_on_sing_in" href="#" class="sing_in"><b>Войти</b></a></div>
+                <div class="text">Уже зарегистрированы? <a class="link_on_sing_in" href="#" class="sing_in"><b>Войти</b></a></div>
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@
                 <form>
                     <div class="wo-or-man">
                         <label>
-                            <input type="radio" name="gender" value="woman" class="real-radio" id="woman_btn">
+                            <input type="radio" name="gender" value="woman" class="real-radio" id="woman_btn" data="woman">
                             <div class="fake-radio woman" id ="woman" onclick="return morw('woman', 'man');">
                                 <div class="wrap">
                                     <p class="wrap-block">Женщине</p>
@@ -111,7 +111,7 @@
             <div class="page2-main">
                     <p class="years">Возраст получателя</p>
                 <form>
-                    <input type="number" class="age" min="0" max="120" id="age">
+                    <input type="number" class="age" min="0" max="120"  id="age">
                 
                     <div class="points">
                         <a onclick="return point('Page2', 'Page3', 'Page4');">
@@ -127,7 +127,6 @@
                     <button class="farther button" onclick="return page3('Page4');">Далее</button>
                 </form>
             </div>
-            
         </div>
     </div>
 
@@ -184,7 +183,7 @@
         <div class="page2-main">
             <button class="settings button" onclick="return choice('Page5');">Настроить параметры</button>
             <p>ИЛИ</p>
-            <button class="wooshbtn button" onclick="return woosh('Gifts');">Вжухнуть подарок</button>
+            <button class="wooshbtn button" onclick="return woosh('Gifts',Presents, budgetValue, maleValue, ageValue);">Вжухнуть подарок</button>
         </div>
     </div>
 
@@ -297,21 +296,20 @@
                 </form>
             </div>
             <button class="wooshbtn button" onclick="return woosh('Gifts');">Вжухнуть подарок</button>
-            <a href="test.html">Гпт</a>
         </div>
     </div>
 
     <div class="page" id="Gifts">
         <div class="container">
             <p>Ваши<br>подарки</p>
+            <p id="gift"></p>
             <div class="gifts">
                 <p></p>
             </div>
         </div>
     </div>
     <script src="js\script.js"></script>
-    <script src="js\gpt.js"></script>
     <script src="js\users.js"></script>
-    <script src="js\yandex.js"></script>
+    <script src="js\presents.js"></script>
 </body>
 </html>
