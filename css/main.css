@@ -272,7 +272,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 6rem;
+  bottom: 4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -448,7 +448,7 @@ body {
 }
 #choice .page2-main{
   position: absolute;
-  bottom: 6rem;
+  bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -678,7 +678,7 @@ body {
 }
 #Page6 .wooshbtn {
   position: absolute;
-  bottom: 6rem;
+  bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -700,25 +700,63 @@ body {
 #Gifts .container{
   text-align: center;
   display: inline-block;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   height: 100%;
 }
 #Gifts p{
   font-family: 'Montserrat_bold', sans-serif;
   text-align: left;
   color: #fff;
-  font-size: 3rem;
-  margin-top: 5rem;
+  font-size: 3.2rem;
+  margin: 0;
+}
+#Gifts .name{
+  margin: 4rem 0;
+}
+#Gifts .thin{
+  font-family: 'Montserrat_reg', sans-serif;
+  margin-bottom: 5px;
+}
+#Gifts .bold{
+  line-height: 30px;
 }
 #Gifts .gifts{
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 30px 2px;
   border: 2px solid #fff;
-  height: 70%;
-  
+  height: 47%;
+}
+#Gifts #gift_name{
+  font-family: 'Montserrat_reg', sans-serif;
+  font-size: 3.5rem;
+}
+#Gifts #gift_description{
+  margin-top: 2.5rem;
+  font-family: 'Montserrat_reg', sans-serif;
+  font-size: 2rem;
+}
+#Gifts .wooshbtn{
+  position: absolute;
+  bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Montserrat_bold', sans-serif;
+  font-size: 1.7rem;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, right top, from(#da0c47), to(#de5314));
+  background: linear-gradient(to top right, #da0c47, #de5314);
+  height: 5.6rem;
+  max-width: 300px;
+  width: 80%;
+  margin-top: 10rem;
 }
 
 #Page1 {
-  display:none;
+  /*display:none;*/
 }
 #Page2 {
   display: none;
@@ -736,7 +774,7 @@ body {
   display: none;
 }
 #registration{
-  /*display: none;*/
+  display: none;
 }
 #choice{
   display: none;

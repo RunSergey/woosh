@@ -1657,8 +1657,8 @@ function page3(id) {
     let filteredPresents = getPresent(Presents, budgetValue, maleValue, ageValue);
     console.log(filteredPresents);
     console.log(ageValue, budgetValue, maleValue);
-    document.getElementById('gift_name').textContent ='Название: ' + filteredPresents.name
-    document.getElementById('gift_description').textContent = 'Описание: ' + filteredPresents.description
+    document.getElementById('gift_name').textContent = filteredPresents.name
+    document.getElementById('gift_description').textContent = filteredPresents.description
 
     document.getElementById(id).style.display = 'block';
     document.getElementById('Page6').style.display = 'none';
