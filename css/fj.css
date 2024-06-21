@@ -1,0 +1,13 @@
+#gift_description, #gift_name{
+    display: none;
+}
+.gifts img{
+    height: 80%;
+}
+#Gifts .gifts{
+    text-align: center;
+}
+#Gifts .thinn{
+    text-align: center;
+    font-size: 2rem;
+}
