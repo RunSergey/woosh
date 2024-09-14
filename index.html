@@ -9,7 +9,6 @@
     <title>Woosh</title>
 </head>
 <body id="body">
-    <!--Добавил страничку с регистрацией-->
     <div class="page" id="registration">
         <div class="top">
             <div class="avatar"></div>
@@ -32,7 +31,7 @@
         </div>
             <div class="page2-main">
                 <form>
-                    <button class="start button" onclick="return registration('Page1');">Регистрация</button>
+                    <button class="start button" id="reg" onclick="return registration('Page1');">Регистрация</button>
                 </form>
                 <div class="text">Уже зарегистрированы? <a class="link_on_sing_in" href="#" class="sing_in"><b>Войти</b></a></div>
             </div>
@@ -183,8 +182,14 @@
         <div class="page2-main">
             <button class="settings button" onclick="return choice('Page5');">Настроить параметры</button>
             <p>ИЛИ</p>
-            <button class="wooshbtn button" onclick="return woosh('Gifts',Presents, budgetValue, maleValue, ageValue);">Вжухнуть подарок</button>
+            <button class="wooshbtn button"
+                onclick="return fetchGPTResponse(budgetValue, maleValue, ageValue);">Вжухнуть подарок</button>
         </div>
+
+        <script>
+            
+          </script>
+
     </div>
 
     <div class="page" id="Page5">
@@ -295,21 +300,17 @@
                     <textarea class="input-text" name="pole_addition" placeholder="Что-нибудь ещё?"></textarea>
                 </form>
             </div>
-            <button class="wooshbtn button" onclick="return woosh('Gifts',Presents, budgetValue, maleValue, ageValue);">Вжухнуть подарок</button>
+            <button class="wooshbtn button" onclick="return fetchGPTResponse(budgetValue, maleValue, ageValue);">Вжухнуть подарок</button>
         </div>
     </div>
 
     <div class="page" id="Gifts">
         <div class="container">
-            <div class="name">
-                <p class="thin">Вжух!</p>
-                <p class="bold">Вот что мы<br>подобрали:</p>
-            </div>
+            <p>Ваши<br>подарки</p>
             <div class="gifts">
                 <p id="gift_name"></p>
-                <p id="gift_description"></p>
+                <p id="gift_description"></p> 
             </div>
-            <button class="wooshbtn button" onclick="document.location='index.html'">Вжухнуть ещё</button>
         </div>
     </div>
     <script src="js\script.js"></script>
