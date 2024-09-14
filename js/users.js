@@ -1,6 +1,7 @@
-let login = document.getElementById('login')
-let passwd = document.getElementById('passwd')
-let btn = document.getElementById('')
+const login = document.getElementById('login')
+const passwd = document.getElementById('passwd')
+const btn = document.getElementById('reg')
+
 let users = {}
 
 function User(login, passwd){
@@ -10,11 +11,7 @@ function User(login, passwd){
 function createId(users){
     return Object.keys(users).length
 }
-btn.addEventListener('click',() => {
-    const loginUser = login.value
-    const passwdUser = passwd.value
 
-    const user = new User(loginUser, passwdUser)
-    const userId = 'User' + createId(users)
-    users[userId] = user
+btn.addEventListener('click', () => {
+    
 })

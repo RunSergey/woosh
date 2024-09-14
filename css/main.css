@@ -1,32 +1,50 @@
 /* Fonts */
 @font-face {
-  font-family: 'Montserrat_bold';
-  src: url('../fonts/Montserrat-Bold.eot');
-  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-family: "Montserrat_bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"),
+    url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Montserrat_reg';
-  src: url('../fonts/Montserrat-Regular.eot');
-  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-family: "Montserrat_reg";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Montserrat_med';
-  src: url('../fonts/Montserrat-Medium.eot');
-  src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium.ttf') format('truetype'), url('../fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+  font-family: "Montserrat_med";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat-Medium.ttf") format("truetype"),
+    url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'TTFirsNeueTrl_reg';
-  src: url('../fonts/TTFirsNeueTrl-Regular.eot');
-  src: url('../fonts/TTFirsNeueTrl-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/TTFirsNeueTrl-Regular.woff2') format('woff2'), url('../fonts/TTFirsNeueTrl-Regular.woff') format('woff'), url('../fonts/TTFirsNeueTrl-Regular.ttf') format('truetype'), url('../fonts/TTFirsNeueTrl-Regular.svg#TTFirsNeueTrl-Regular') format('svg');
+  font-family: "TTFirsNeueTrl_reg";
+  src: url("../fonts/TTFirsNeueTrl-Regular.eot");
+  src: url("../fonts/TTFirsNeueTrl-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TTFirsNeueTrl-Regular.woff2") format("woff2"),
+    url("../fonts/TTFirsNeueTrl-Regular.woff") format("woff"),
+    url("../fonts/TTFirsNeueTrl-Regular.ttf") format("truetype"),
+    url("../fonts/TTFirsNeueTrl-Regular.svg#TTFirsNeueTrl-Regular")
+      format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -46,7 +64,7 @@ a:focus {
 }
 .button {
   color: #fff;
-  font-family: 'TTFirsNeueTrl_reg', sans-serif;
+  font-family: "TTFirsNeueTrl_reg", sans-serif;
   font-size: 1.5rem;
   border-radius: 45px;
   border: 0.2rem solid #fff;
@@ -56,7 +74,7 @@ html {
   height: 100%;
   font-size: 10px;
   text-align: center;
-  font-family: 'TTFirsNeueTrl_reg', sans-serif;
+  font-family: "TTFirsNeueTrl_reg", sans-serif;
 }
 .p {
   margin: 0;
@@ -66,13 +84,28 @@ html {
   height: 100%;
 }
 
-
 body {
-  background: -webkit-gradient(linear, right top, left bottom, from(#e1741c), color-stop(#da1505), color-stop(#da0c47), to(#da00c2)) no-repeat;
-  background: linear-gradient(to bottom left, #e1741c, #da1505, #da0c47, #da00c2) no-repeat;
+  background: -webkit-gradient(
+      linear,
+      right top,
+      left bottom,
+      from(#e1741c),
+      color-stop(#da1505),
+      color-stop(#da0c47),
+      to(#da00c2)
+    )
+    no-repeat;
+  background: linear-gradient(
+      to bottom left,
+      #e1741c,
+      #da1505,
+      #da0c47,
+      #da00c2
+    )
+    no-repeat;
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 100%;
   margin: 0;
   min-width: 320px;
@@ -85,7 +118,7 @@ body {
 .subtitle {
   z-index: 10;
   text-align: center;
-  font-family: 'TTFirsNeueTrl_reg', sans-serif;
+  font-family: "TTFirsNeueTrl_reg", sans-serif;
   color: #fff;
   font-size: 0.9rem;
   margin-top: 7rem;
@@ -104,17 +137,17 @@ body {
   bottom: 0rem;
   z-index: 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: url(../img/logo.png) center no-repeat;
   background-size: 100%;
 }
 /*Стили для странички с регистрацией*/
-.top{
+.top {
   padding-top: 10rem;
-  z-index:20
+  z-index: 20;
 }
-.avatar{
+.avatar {
   width: 7rem;
   height: 7rem;
   background: url(..img\user.png) center no-repeat;
@@ -125,7 +158,7 @@ body {
   z-index: 10;
 }
 
-.text{
+.text {
   color: #fff;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -133,8 +166,8 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
-  
-.input_field{
+
+.input_field {
   padding: 0 1rem;
   font-size: 1.5rem;
   position: relative;
@@ -148,7 +181,7 @@ body {
   margin-top: 0.5rem;
   border: 0.2rem solid #fff;
 }
-.remember_me{
+.remember_me {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -157,17 +190,15 @@ body {
   z-index: 20;
   color: #fff;
 
-.remember_me input, p{
-  display: inline-block;
+  .remember_me input,
+  p {
+    display: inline-block;
+  }
 }
-  
-}
-.link_on_sing_in{
+.link_on_sing_in {
   color: #fff;
   text-decoration: none;
 }
-
-
 
 /**/
 
@@ -187,7 +218,13 @@ body {
   height: 55%;
   width: 100%;
   padding-top: 4rem;
-  background: -webkit-gradient(linear, right top, left bottom, from(#de4411), to(#e1751d));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#de4411),
+    to(#e1751d)
+  );
   background: linear-gradient(to bottom left, #de4411, #e1751d);
 }
 #Page2 .top .bg {
@@ -199,11 +236,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #Page2 .top .bg .p2mc {
   height: 37%;
@@ -218,7 +255,7 @@ body {
   background-color: #000;
   text-align: center;
   font-size: 1.5rem;
-  font-family: 'TTFirsNeueTrl_reg', sans-serif;
+  font-family: "TTFirsNeueTrl_reg", sans-serif;
   display: inline-block;
 }
 .fake-radio P {
@@ -274,8 +311,8 @@ body {
   text-align: center;
   bottom: 6rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .page2-main form {
   width: 24rem;
@@ -287,7 +324,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .page2-main .question {
   font-size: 2rem;
@@ -331,7 +368,13 @@ body {
   height: 55%;
   width: 100%;
   padding-top: 0rem;
-  background: -webkit-gradient(linear, right top, left bottom, from(#db1219), to(#de4411));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#db1219),
+    to(#de4411)
+  );
   background: linear-gradient(to bottom left, #db1219, #de4411);
 }
 #Page3 .top .bg {
@@ -343,11 +386,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #Page3 .top .bg .p2mc {
   height: 50%;
@@ -374,7 +417,13 @@ body {
   height: 55%;
   width: 100%;
   padding-top: 1rem;
-  background: -webkit-gradient(linear, right top, left bottom, from(#db03a9), to(#db1219));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#db03a9),
+    to(#db1219)
+  );
   background: linear-gradient(to bottom left, #db03a9, #db1219);
 }
 #Page4 .top .bg {
@@ -386,11 +435,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #Page4 .page2-main .quest-budget {
   font-size: 2rem;
@@ -399,7 +448,7 @@ body {
   width: 85%;
   -webkit-appearance: none;
   height: 3px;
-  background: #ACACC1;
+  background: #acacc1;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -408,9 +457,9 @@ body {
   -webkit-appearance: none;
   height: 17px;
   width: 17px;
-  background: #DA1F07;
+  background: #da1f07;
   border-radius: 50%;
-  border: 1px solid #DA1F07;
+  border: 1px solid #da1f07;
   cursor: pointer;
 }
 #Page4 .page2-main .range .price {
@@ -419,34 +468,34 @@ body {
   grid-template-columns: 30% 40%;
   justify-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 1.3rem;
 }
 #Page4 .page2-main .range .price-null {
-  color: #ACACC1;
+  color: #acacc1;
   width: 30%;
 }
 #Page4 .page2-main .range .price-max {
-  color: #ACACC1;
+  color: #acacc1;
   width: 40%;
 }
-#choice{
+#choice {
   min-width: 320px;
   height: 100%;
   background-color: #fff;
 }
-#choice .settings{
-  font-family: 'Montserrat_bold', sans-serif;
+#choice .settings {
+  font-family: "Montserrat_bold", sans-serif;
   font-size: 1.7rem;
   border: none;
-  color: #DA1F07;
+  color: #da1f07;
   background: #fff;
-  border: 3px solid #DA1F07;
+  border: 3px solid #da1f07;
   height: 5.6rem;
   width: 24rem;
 }
-#choice .page2-main{
+#choice .page2-main {
   position: absolute;
   bottom: 6rem;
   margin-left: auto;
@@ -455,11 +504,17 @@ body {
   right: 0;
   text-align: center;
 }
-#choice .wooshbtn{
-  font-family: 'Montserrat_bold', sans-serif;
+#choice .wooshbtn {
+  font-family: "Montserrat_bold", sans-serif;
   font-size: 1.7rem;
   border: none;
-  background: -webkit-gradient(linear, left bottom, right top, from(#da0c47), to(#de5314));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#da0c47),
+    to(#de5314)
+  );
   background: linear-gradient(to top right, #da0c47, #de5314);
   height: 5.6rem;
   width: 24rem;
@@ -469,8 +524,14 @@ body {
   height: 55%;
   width: 100%;
   padding-top: 1rem;
-  background: -webkit-gradient(linear, right top, left bottom, from(#db03a9), to(#db1219));
-  background: linear-gradient(to bottom left, #7E03C6, #db03a9);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#db03a9),
+    to(#db1219)
+  );
+  background: linear-gradient(to bottom left, #7e03c6, #db03a9);
 }
 #choice .top .bg {
   height: 100%;
@@ -481,11 +542,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #Page5 {
   height: 100%;
@@ -530,11 +591,11 @@ body {
 }
 #Page5 .name .thin {
   text-align: left;
-  font-family: 'Montserrat_reg', sans-serif;
+  font-family: "Montserrat_reg", sans-serif;
 }
 #Page5 .name .bold {
   text-align: left;
-  font-family: 'Montserrat_bold', sans-serif;
+  font-family: "Montserrat_bold", sans-serif;
 }
 #Page5 .filters {
   display: inline-block;
@@ -557,14 +618,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 11px;
   font-weight: 500;
   padding-bottom: 0.3vh;
 }
 #Page5 .filters .filters_row .filters_element .filters_element.element1 {
-  font-family: 'Montserrat_med', sans-serif;
+  font-family: "Montserrat_med", sans-serif;
   background: none;
   color: #fff;
   border: 2px solid #fff;
@@ -611,7 +672,7 @@ body {
 }
 #Page5 .filters .filters_row .filters_element #memorable {
   border-radius: 15px 15px 15px 4px;
-  padding: 10px 21px ;
+  padding: 10px 21px;
 }
 #Page5 .filters .filters_row .filters_element #anniversary {
   border-radius: 15px 15px 4px 15px;
@@ -653,12 +714,12 @@ body {
 #Page6 .name .thin {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat_reg', sans-serif;
+  font-family: "Montserrat_reg", sans-serif;
 }
 #Page6 .name .bold {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat_bold', sans-serif;
+  font-family: "Montserrat_bold", sans-serif;
 }
 #Page6 .input {
   margin-top: 3rem;
@@ -684,79 +745,46 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  font-family: 'Montserrat_bold', sans-serif;
+  font-family: "Montserrat_bold", sans-serif;
   font-size: 1.7rem;
   border: none;
-  background: -webkit-gradient(linear, left bottom, right top, from(#da0c47), to(#de5314));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#da0c47),
+    to(#de5314)
+  );
   background: linear-gradient(to top right, #da0c47, #de5314);
   height: 5.6rem;
   width: 24rem;
   margin-top: 10rem;
 }
-#Gifts{
+#Gifts {
   background: #000;
   height: 100%;
 }
-#Gifts .container{
+#Gifts .container {
   text-align: center;
   display: inline-block;
-  width: 80%;
-  max-width: 300px;
+  width: 300px;
   height: 100%;
 }
-#Gifts p{
-  font-family: 'Montserrat_bold', sans-serif;
+#Gifts p {
+  font-family: "Montserrat_bold", sans-serif;
   text-align: left;
   color: #fff;
-  font-size: 3.2rem;
-  margin: 0;
+  font-size: 3rem;
+  margin-top: 5rem;
 }
-#Gifts .name{
-  margin: 4rem 0;
-}
-#Gifts .thin{
-  font-family: 'Montserrat_reg', sans-serif;
-  margin-bottom: 5px;
-}
-#Gifts .bold{
-  line-height: 30px;
-}
-#Gifts .gifts{
-  padding: 2rem;
-  border-radius: 30px 2px;
+#Gifts .gifts {
+  border-radius: 10px;
   border: 2px solid #fff;
-  height: 40%;
-}
-#Gifts #gift_name{
-  font-family: 'Montserrat_reg', sans-serif;
-  font-size: 3.5rem;
-}
-#Gifts #gift_description{
-  margin-top: 2.5rem;
-  font-family: 'Montserrat_reg', sans-serif;
-  font-size: 2rem;
-}
-#Gifts .wooshbtn{
-  position: absolute;
-  bottom: 6rem;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-family: 'Montserrat_bold', sans-serif;
-  font-size: 1.7rem;
-  border: none;
-  background: -webkit-gradient(linear, left bottom, right top, from(#da0c47), to(#de5314));
-  background: linear-gradient(to top right, #da0c47, #de5314);
-  height: 5.6rem;
-  max-width: 300px;
-  width: 80%;
-  margin-top: 10rem;
+  height: 70%;
 }
 
 #Page1 {
-  /*display:none;*/
+  display: none;
 }
 #Page2 {
   display: none;
@@ -773,12 +801,12 @@ body {
 #Page6 {
   display: none;
 }
-#registration{
+#registration {
+  /*display: none;*/
+}
+#choice {
   display: none;
 }
-#choice{
-  display: none;
-}
-#Gifts{
+#Gifts {
   display: none;
 }
