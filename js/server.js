@@ -10,7 +10,6 @@ app.post('/proxy', (req, res) => {
    axios.post(url, req.body, {
        headers: {
            'Content-Type': 'application/json',
-           'Authorization': 'Api-key AQVN1AqaLq1lLGTV6jTYb-8ZmcEplxU0vfImot66',
            'x-folder-id': 'ajek1ad2tbb55hidbqhk'
        }
    })
